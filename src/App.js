@@ -1,12 +1,14 @@
 import './App.css';
+import { Route, Routes } from 'react-router-dom'
+import CurrentWorkout from './Routes/currentWorkout';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
+    <main>
+      <Routes>
+        <Route path='/' element={<CurrentWorkout />} />
+      </Routes>
+    </main>
   );
 }
-
-export default App;
