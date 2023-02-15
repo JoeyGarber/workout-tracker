@@ -1,6 +1,4 @@
-import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import { getWorkouts } from '../api/workouts'
 
@@ -19,6 +17,7 @@ export default function StartWorkout () {
     <div className='container'>
       <Button type='submit' onClick={e => onClick(e)}>Get Workouts</Button>
       <Button onClick={() => navigate('/buildWorkout')}>Build Workout</Button>
+      <Button onClick={() => navigate('/createExercise')}>Create Exercise</Button>
     </div>
   )
 }

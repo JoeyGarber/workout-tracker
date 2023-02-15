@@ -8,6 +8,13 @@ export const getWorkouts = () => {
   })
 }
 
+export const getWorkout = (id) => {
+  return axios({
+    method: 'GET',
+    url: apiUrl + '/workouts/' + id
+  })
+}
+
 export const createWorkout = (data) => {
   return axios({
     method: 'POST',
